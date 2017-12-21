@@ -23,7 +23,7 @@ To run this program,
     python guess.py rs
 
 Then you can get a window to show the age and gender like below.
-
+![image](https://github.com/qzheng527/detect_age_gender/blob/master/example.png)
 
 Optimization,
 My test is on one desktop with Intel(R) Core(TM) i7-5557U CPU @ 3.10GHz.
