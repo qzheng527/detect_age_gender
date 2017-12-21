@@ -37,6 +37,7 @@ I did below two to optimize the performance,
     cd dlib
     mkdir build; cd build; cmake .. -DDLIB_USE_CUDA=0 -DUSE_AVX_INSTRUCTIONS=1; cmake --build .
 2) Build tensorflow from source to enable MKL, SSE, AVX...
+
     https://software.intel.com/en-us/articles/build-and-install-tensorflow-on-intel-architecture
     
     bazel build --config=mkl --copt="-DEIGEN_USE_VML" -c opt --copt=-mavx --copt=-msse4.1 --copt=-msse4.2 ...
