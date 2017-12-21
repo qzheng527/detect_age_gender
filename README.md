@@ -13,10 +13,13 @@ The checkpoinit is downloaded from googdle drive as below.
 
     https://drive.google.com/drive/folders/0B8N1oYmGLVGWemZQd3JMOEZvdGs
 
-To run this program, 
-1) UVC camera, make sure the camera is inserted. The default setting is cv2.VideoCapture(0) you can do the change based on your system. And if something realsense related error reported, you can delete all the realsense libs/calls.
+To run this program,
+1) Get checkpoints from above google drive and put them on 
+    checkpoints/age
+    checkpoints/gender
+2) UVC camera, make sure the camera is inserted. The default setting is cv2.VideoCapture(0) you can do the change based on your system. And if something realsense related error reported, you can delete all the realsense libs/calls.
     python guess.py uvc
-2) RealSense DS435, Intel depth camera with RGB camera on the module, which is the one I am using for develop. Insert the camera to USB 3.0 port, and run
+3) RealSense DS435, Intel depth camera with RGB camera on the module, which is the one I am using for develop. Insert the camera to USB 3.0 port, and run
     python guess.py rs
 
 Then you can get a window to show the age and gender like below.
